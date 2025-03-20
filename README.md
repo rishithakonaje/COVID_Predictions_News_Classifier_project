@@ -1,81 +1,28 @@
-📚 Project Overview
-This project involves two main components:
+# 📚 **Project Overview**
 
-News Classifier: A machine learning model designed to classify news articles as either "FAKE" or "TRUE" based on their content.
+This project has two main components:
 
-COVID-19 Data Analysis: An analysis of COVID-19 cases across different regions, including visualizations and forecasting.
+1. ***News Classifier***: A machine learning model to classify news articles as either **"FAKE"** or **"TRUE"** based on content.
+2. ***COVID-19 Data Analysis***: Analyzing **COVID-19** cases with visualizations and forecasting.
 
-Table of Contents
-Project Overview
+## **Table of Contents**
+- [Project Overview](#project-overview)
+- [Installation](#installation)
+- [Usage](#usage)
+  - [News Classifier](#news-classifier)
+  - [COVID-19 Data Analysis](#covid-19-data-analysis)
+- [News Classifier](#news-classifier-1)
+  - [Description](#description)
+  - [How It Works](#how-it-works)
+- [COVID-19 Data Analysis](#covid-19-data-analysis-1)
+  - [Description](#description-1)
+  - [How It Works](#how-it-works-1)
+- [Contributing](#contributing)
+- [License](#license)
 
-Table of Contents
+## **Installation** 💻
 
-Installation
+To run this project, you need Python and some libraries. Install them using:
 
-Usage
-
-News Classifier
-
-Description
-
-How It Works
-
-COVID-19 Data Analysis
-
-Description
-
-How It Works
-
-Contributing
-
-License
-
-Installation 💻
-To run this project, you will need Python installed on your system along with several libraries. Here's how you can install them:
-
-bash
+```bash
 pip install pandas numpy matplotlib seaborn scikit-learn nltk plotly fbprophet
-For the news classifier, ensure you have the nltk stopwords downloaded:
-
-python
-import nltk
-nltk.download('stopwords')
-Usage 🔍
-News Classifier
-Clone the repository.
-
-Run the news_classifier.py script to train and test the model.
-
-Use the predict function to classify new sentences.
-
-COVID-19 Data Analysis
-Clone the repository.
-
-Run the covid_analysis.py script to load and visualize COVID-19 data.
-
-Use the Prophet library for forecasting.
-
-News Classifier
-Description
-This component uses a Multinomial Naive Bayes classifier to classify news articles based on their content. It combines the title, text, and source of each article to make predictions.
-
-How It Works
-Data Preparation: The script loads a dataset of labeled news articles.
-
-Feature Extraction: It uses CountVectorizer to convert text into numerical features.
-
-Model Training: Trains a Multinomial Naive Bayes model on the prepared data.
-
-Prediction: Uses the trained model to predict the label of new, unseen articles.
-
-COVID-19 Data Analysis
-Description
-This part of the project analyzes COVID-19 case data from various regions. It includes visualizations of case trends and forecasts future cases using the Prophet library.
-
-How It Works
-Data Loading: Loads COVID-19 case data from CSV files.
-
-Data Visualization: Uses Plotly to create interactive plots of case trends.
-
-Forecasting: Utilizes the Prophet library to predict future case numbers.
-
